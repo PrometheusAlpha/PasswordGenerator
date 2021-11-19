@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="index.js" type="module"></script>
+</head>
+
+<body>
+  <div class="box">
+    <div class="selection">
+      <label for="pwlength">Password length</label></td>
+      <select name="" id="pwlength">
+      </select>
+      <p>Include symbol</p>
+      <div class="checkbox">
+        <input type="checkbox" name="" id="symbol">
+        <label for="symbol">
+          <div class="checkbox__button"></div>
+        </label>
+      </div>
+
+      <p>Include number</p>
+      <div class="checkbox">
+        <input type="checkbox" id="numbers">
+        <label for="numbers">
+          <div class="checkbox__button"></div>
+        </label>
+      </div>
+
+      <p>Include lowercase</p>
+      <div class="checkbox">
+        <input type="checkbox" id="lowercase">
+        <label for="lowercase">
+          <div class="checkbox__button"></div>
+        </label>
+      </div>
+      <p>Include uppercase</p>
+      <div class="checkbox">
+        <input type="checkbox" id="uppercase">
+        <label for="uppercase">
+          <div class="checkbox__button"></div>
+        </label>
+      </div>
+    </div>
+    <button id="generate">Generate</button>
+    <br>
+    <input type="text" id="password">
+    <button id="copy">Copy</button>
+  </div>
+</body>
+
+</html>
