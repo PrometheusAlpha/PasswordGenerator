@@ -41,7 +41,11 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked+label>div {
   background: #3498db;
-  border: none;
+}
+
+input[type="checkbox"]:checked+label>div>.checkbox__button__inner {
+  left: unset;
+  right: 0%;
 }
 
 .checkbox__button {
@@ -50,9 +54,18 @@ input[type="checkbox"]:checked+label>div {
   width: 4rem;
   height: 2rem;
   border: 1px solid #000;
-  border-radius: .5rem;
+  border-radius: 2rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+}
+
+.checkbox__button__inner {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background: #000;
 }
 
 #pwlength {
@@ -65,7 +78,8 @@ input[type="checkbox"]:checked+label>div {
 }
 
 #password {
-  max-width: 35rem;
+  width: 50vw;
+  max-width: 800px;
   height: 1rem;
   font-size: 1rem;
   border-radius: 1rem;
