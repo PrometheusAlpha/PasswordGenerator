@@ -3,8 +3,9 @@ document.getElementById("generate").onclick = function () {
   const length = document.querySelector("#pwlength").value;
   const lowercase = document.querySelector("#lowercase").checked;
   const uppercase = document.querySelector("#uppercase").checked;
-  const numbers = document.querySelector("#numbers").checked;
+  const numbers = document.querySelector("#number").checked;
   const specialCharacters = document.querySelector("#symbol").checked;
+  // generate password
   const password = generatePassword(lowercase, uppercase, numbers, specialCharacters, length);
   const passwordText = document.querySelector("#password");
   passwordText.value = password;
@@ -44,10 +45,8 @@ function generatePassword(lowercase, uppercase, numbers, specialCharacters, leng
 // copy password to clipboard
 document.getElementById("copy").onclick = function () {
   var copyText = document.getElementById("password");
-
   copyText.select();
   copyText.setSelectionRange(0, 99999);
-
   navigator.clipboard.writeText(copyText.value);
 }
 
@@ -55,6 +54,5 @@ for (let index = 8; index < 51; index++) {
   let option = document.createElement("option");
   option.value = index;
   option.text = index;
-  document.getElementById("pwlength").appendChild(option);
   console.log(index);
 }
