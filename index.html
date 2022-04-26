@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Password Generator</title>
   <link rel="shortcut icon" type="image/jpg" href="./resources/images/favicon.png" />
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index.css" />
   <script src="index.js" type="module"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -15,58 +15,59 @@
 <body class="antialiased h-screen d flex items-center justify-center bg-slate-700 text-white">
   <div class="max-w-[600px]">
     <div class="grid gap-4 items-center grid-cols-2">
-      <label for="pwlength" class="text-2xl font-semibold">Password length</label>
-      <input type="number" id="pwlength" min="8" max="128" value="16" class="focus:outline-none border-4 border-slate-300 rounded-2xl bg-slate-700 p-2 text-lg">
+      <label for="pwlength" class="text-2xl font-semibold">
+        Password length
+      </label>
+      <input type="number" id="pwlength" min="8" max="128" value="16"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        required>
 
       <p class="text-2xl font-semibold">Include symbol</p>
-      <div class="flex">
-        <label for="symbol" class="relative rounded-full border-4 border-slate-900 overflow-hidden cursor-pointer">
-          <input type="checkbox" id="symbol" class="peer hidden" checked>
-          <div class="relative h-10 w-20 flex items-center peer-checked:bg-blue-300"></div>
-          <div
-            class="w-10 h-10 absolute left-0 top-0 rounded-full bg-slate-500 peer-checked:right-0 peer-checked:left-auto">
-          </div>
-        </label>
-      </div>
+      <label for="symbol" class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" value="" id="symbol" class="sr-only peer" checked />
+        <div
+          class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+        </div>
+      </label>
 
       <p class="text-2xl font-semibold">Include number</p>
-      <div class="flex">
-        <label for="number" class="relative rounded-full border-4 border-slate-900 overflow-hidden cursor-pointer">
-          <input type="checkbox" id="number" class="peer hidden" checked>
-          <div class="relative h-10 w-20 flex items-center peer-checked:bg-blue-300"></div>
-          <div
-            class="w-10 h-10 absolute left-0 top-0 rounded-full bg-slate-500 peer-checked:right-0 peer-checked:left-auto">
-          </div>
-        </label>
-      </div>
+      <label for="number" class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" value="" id="number" class="sr-only peer" checked />
+        <div
+          class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+        </div>
+      </label>
 
       <p class="text-2xl font-semibold">Include lowercase</p>
-      <div class="flex">
-        <label for="lowercase" class="relative rounded-full border-4 border-slate-900 overflow-hidden cursor-pointer">
-          <input type="checkbox" id="lowercase" class="peer hidden" checked>
-          <div class="relative h-10 w-20 flex items-center peer-checked:bg-blue-300"></div>
-          <div
-            class="w-10 h-10 absolute left-0 top-0 rounded-full bg-slate-500 peer-checked:right-0 peer-checked:left-auto">
-          </div>
-        </label>
-      </div>
+      <label for="lowercase" class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" value="" id="lowercase" class="sr-only peer" checked />
+        <div
+          class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+        </div>
+      </label>
 
       <p class="text-2xl font-semibold">Include uppercase</p>
-      <div class="flex">
-        <label for="uppercase" class="relative rounded-full border-4 border-slate-900 overflow-hidden cursor-pointer">
-          <input type="checkbox" id="uppercase" class="peer hidden" checked>
-          <div class="relative h-10 w-20 flex items-center peer-checked:bg-blue-300"></div>
-          <div
-            class="w-10 h-10 absolute left-0 top-0 rounded-full bg-slate-500 peer-checked:right-0 peer-checked:left-auto">
-          </div>
-        </label>
-      </div>
+      <label for="uppercase" class="relative inline-flex items-center cursor-pointer">
+        <input type="checkbox" value="" id="uppercase" class="sr-only peer" checked />
+        <div
+          class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+        </div>
+      </label>
+
+      <button type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        id="generate">Generate</button>
+
+      <!-- <br /> -->
+      <input type="text" id="password"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        placeholder="Password here" readonly>
+
+      <button type="button"
+        class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+        id="copy">Copy</button>
+
     </div>
-    <button id="generate" class="bg-blue-500 text-white px-4 py-2 rounded-2xl my-3 font-bold">Generate</button>
-    <br>
-    <input type="text" id="password" class="bg-slate-500 rounded-2xl p-3 font-semibold focus:outline-none">
-    <button id="copy" class="px-3 py-2 rounded-2xl font-semibold">Copy</button>
-  </div>
 </body>
 
 </html>

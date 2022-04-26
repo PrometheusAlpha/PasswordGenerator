@@ -54,5 +54,4 @@ for (let index = 8; index < 51; index++) {
   let option = document.createElement("option");
   option.value = index;
   option.text = index;
-  console.log(index);
 }
