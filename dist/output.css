@@ -1,26 +1,7 @@
 html {
-  font-family: SF Pro Text, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, Roboto, Helvetica,
+    Arial, sans-serif;
   font-size: clamp(1rem, 2vw, 1.2rem);
-}
-
-@font-face {
-  font-family: SF Pro Text;
-
-  font-style: normal;
-
-  font-weight: 600;
-
-  src: url("../resources/font/SF-Pro-Text.otf");
-}
-
-@font-face {
-  font-family: SF Mono;
-
-  font-style: normal;
-
-  font-weight: 600;
-
-  src: url("../resources/font/SFMono.otf");
 }
 
 /*
