@@ -16,3 +16,7 @@ html {
   font-weight: 600;
   src: url("../resources/font/SFMono.otf");
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
